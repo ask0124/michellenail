@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/* CSS Document */
+@media (max-width: 480px){
+	body{
+		max-width:480px;
+		padding: auto;
+		margin: auto;
+		overflow-x: hidden;
+	}
+	.header-wrapper{
+		background-color:rgba(255,255,255,0.00);
+	}
+	.header-right ul{
+		display:none;
+	}
+	#nav-drawer {
+  	display:block;
+		position:absolute;
+		top:0;
+		left:80%;
+		z-index:10;
+}
+	#nav-drawer img{
+		width:80%;
+	}
+/*チェックボックス等は非表示に*/
+.nav-unshown {
+  display:none;
+}
+/*中身*/
+#nav-content {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;/*最前面に*/
+  width: 80%;/*右側に隙間を作る（閉じるカバーを表示）*/
+  height: 100%;
+  background-color:rgba(255,255,255,0.30);/*背景色*/
+  transition: .3s ease-in-out;/*滑らかに表示*/
+  -webkit-transform: translateX(-105%);
+  transform: translateX(-105%);/*左に隠しておく*/
+}
+
+/*チェックが入ったらもろもろ表示*/
+#nav-input:checked ~ #nav-close {
+  display: block;/*カバーを表示*/
+  opacity: .5;
+}
+
+#nav-input:checked ~ #nav-content {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);/*中身を表示（右へスライド）*/
+}
+	#nav-content ul{
+	list-style:none;
+}
+	#nav-content li{
+		text-align:center;
+		font-size:25px;
+		line-height:50px;
+		font-family: balloon-d,sans-serif;
+		font-weight: 800;
+		font-style: normal;
+	}
+	#nav-content a{
+		text-decoration: none;
+		color:rgba(169,141,108,1.00);
+}
+	h2{
+	font-size:100px;
+}
+	.map{
+		display:none;
+	}
+	.res-map{
+		display:block;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width : 807px ) and ( orientation : landscape ){
+	body{
+		max-width:896px;
+		padding: auto;
+		margin: auto;
+	}
+}
