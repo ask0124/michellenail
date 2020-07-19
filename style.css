@@ -8,7 +8,8 @@ body{
 .container{
 	max-width:980px;
 	margin:0 auto;
-	padding-bottom: 100px;
+	padding-top:50px;
+	padding-bottom: 150px;
 }
 #nav-drawer{
 	display:none;
@@ -76,6 +77,7 @@ a:hover{
 	opacity: 0.5;
 }
 .concept-wrapper{
+	background-color:white;
 	text-align:center;
 	color:rgba(234,220,193,1.00);
 }
@@ -89,8 +91,6 @@ font-style: normal;
 }
 h3{
 	font-size:30px;
-	margin: 0;
-	padding: 0;
 	font-family: balloon-d,sans-serif;
 font-weight: 800;
 font-style: normal;
@@ -125,6 +125,9 @@ p{
 .menu-wrapper a{
 	color:white;
 }
+.gallery-wrapper{
+	background-color:white;
+}
 .gallery-wrapper h2{
 	text-align:center;
 	color:rgba(235,220,194,1.00);
@@ -132,6 +135,7 @@ p{
 .gallery-list{
 	display:flex;
 	flex-wrap:wrap;
+	width:100%;
 }
 .gallery-list img{
 	flex:auto;
@@ -155,3 +159,4 @@ a.anchor {
     padding-top: 70px;
     margin-top: -70px;
 }
+
