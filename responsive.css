@@ -10,18 +10,21 @@
 	.header-wrapper{
 		background-color:rgba(255,255,255,0.00);
 	}
+	.header-left img{
+	width:20%;
+}
 	.header-right ul{
 		display:none;
 	}
 	#nav-drawer {
   	display:block;
 		position:absolute;
-		top:0;
-		left:80%;
+		top:10%;
+		left:90%;
 		z-index:10;
 }
 	#nav-drawer img{
-		width:80%;
+		width:70%;
 	}
 /*チェックボックス等は非表示に*/
 .nav-unshown {
@@ -69,6 +72,16 @@
 }
 	h2{
 	font-size:100px;
+}
+	p{
+	font-size:15px;
+		width:80%;
+		margin: 0 auto;
+}
+	.menu-wrapper li{
+	font-size:15px;
+	width:80%;
+		margin: 0 auto;
 }
 	.map{
 		display:none;
