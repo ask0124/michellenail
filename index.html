@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <title>MICHELL NAIL</title>
 	<link href="style.css" media="all" rel="stylesheet">
@@ -44,7 +45,7 @@
 		<a id="concept" class="anchor"></a>
 		<div class="container">
 			<h2>concept</h2>
-			<img src="MICHELL.NAILpic/無題46_20200703172556.PNG">
+			<img src="MICHELL.NAILpic/無題57_20200926002254.jpg">
 			<p>本業の傍らで毎週月、火曜日のみ、ゆるりと自宅ネイルサロンを開いております。お喋りが大好きなネイリストが楽しく施術させていただきますので自宅サロンに抵抗のある方もお気軽にお越しください！グリーンの多い自宅で愛犬のオロとプラータとお待ちしております❤︎</p>
 			<p>ネイリスト　政野咲実</p>
 		</div>
@@ -55,7 +56,7 @@
 			<h2>menu</h2>
 			<img src="MICHELL.NAILpic/IMG_0086.jpg">
 			<ul>
-				<li><a class="dm" href="https://airrsv.net/michellenail/calendar">完全予約制（ご予約はこちらから）</a></li>
+				<a class="dm" href="https://airrsv.net/michellenail/calendar">完全予約制（ご予約はこちらから）</a>
 				<li>毎週月曜日、火曜日　10:00〜20:00（要相談）</li>
 				<li>ワンカラー60分　3000円</li>
 				<li>ミラー、マグネットネイル75分　3500円</li>
@@ -71,21 +72,35 @@
 		<div class="container">
 		<h2>gallery</h2>
 			<div class="gallery-list">
-				<img src="MICHELL.NAILpic/cache_Messagep97057.jpg">
-				<img src="MICHELL.NAILpic/cache_Messagep97073.jpg">
-				<img src="MICHELL.NAILpic/cache_Messagep97088.jpg">
-				<img src="MICHELL.NAILpic/cache_Messagep97091.jpg">
-				<img src="MICHELL.NAILpic/cache_Messagep97101.jpg">
-				<img src="MICHELL.NAILpic/cache_Messagep97090.jpg">
-				<img src="MICHELL.NAILpic/cache_Messagep97102.jpg">
-				<img src="MICHELL.NAILpic/cache_Messagep97108.jpg">
-				<img src="MICHELL.NAILpic/cache_Messagep97119.jpg">
-				<img src="MICHELL.NAILpic/IMG_0057.JPG">
-				<img src="MICHELL.NAILpic/IMG_0058.JPG">
-				<img src="MICHELL.NAILpic/IMG_0062.JPG">
-				<img src="MICHELL.NAILpic/IMG_0063.JPG">
-				<img src="MICHELL.NAILpic/IMG_0056.JPG">
-				<img src="MICHELL.NAILpic/cache_Messagep97113.jpg">
+				<!-- Swiper START -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+<div class="swiper-container">
+	<!-- メイン表示部分 -->
+	<div class="swiper-wrapper">
+		<!-- 各スライド -->
+		<div class="swiper-slide"><img src="MICHELL.NAILpic/cache_Messagep97057.jpg"></div>
+		<div class="swiper-slide"><img src="MICHELL.NAILpic/cache_Messagep97073.jpg"></div>
+		<div class="swiper-slide"><img src="MICHELL.NAILpic/cache_Messagep97088.jpg"></div>
+		<div class="swiper-slide"><img src="MICHELL.NAILpic/cache_Messagep97091.jpg"></div>
+		<div class="swiper-slide"><img src="MICHELL.NAILpic/cache_Messagep97101.jpg"></div>
+		<div class="swiper-slide"><img src="MICHELL.NAILpic/cache_Messagep97090.jpg"></div>
+		<div class="swiper-slide"><img src="MICHELL.NAILpic/cache_Messagep97102.jpg"></div>
+		<div class="swiper-slide"><img src="MICHELL.NAILpic/cache_Messagep97108.jpg"></div>
+		<div class="swiper-slide"><img src="MICHELL.NAILpic/cache_Messagep97119.jpg"></div>
+		<div class="swiper-slide"><img src="MICHELL.NAILpic/IMG_0057.JPG"></div>
+		<div class="swiper-slide"><img src="MICHELL.NAILpic/IMG_0058.JPG"></div>
+		<div class="swiper-slide"><img src="MICHELL.NAILpic/IMG_0062.JPG"></div>
+		<div class="swiper-slide"><img src="MICHELL.NAILpic/IMG_0063.JPG"></div>
+		<div class="swiper-slide"><img src="MICHELL.NAILpic/IMG_0056.JPG"></div>
+		<div class="swiper-slide"><img src="MICHELL.NAILpic/cache_Messagep97113.jpg"></div>
+	</div>
+	<!-- 前ページボタン -->
+	<div class="swiper-button-prev swiper-button-black"></div>
+	<!-- 次ページボタン -->
+	<div class="swiper-button-next swiper-button-black"></div>
+	<div class="swiper-pagination swiper-pagination-black"></div>
+</div>
+<!-- Swiper END -->	
 			</div>
 		</div>
 	</div>
@@ -111,4 +126,32 @@
 		</div>
 	</div>
 </body>
+	<script>
+		var mySwiper = new Swiper('.swiper-container', {
+	spaceBetween: 10,
+	slidesPerView: 3,
+	breakpoints: {
+		800: {
+			slidesPerView: 2,
+			slidesPerGroup: 2,
+			spaceBetween: 0
+		},
+		480: {
+			slidesPerView: 1,
+			slidesPerGroup: 1,
+			spaceBetween: 0
+		}
+		
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev'
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		type: 'bullets',
+		clickable: true
+	}
+});
+	</script>
 </html>
