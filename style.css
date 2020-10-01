@@ -63,6 +63,9 @@ font-style: normal;
 .top-image{
 	width: 100vw;
 }
+.top-image-res{
+	display:none;
+}
 .icon{
 	position:absolute;
 }
@@ -170,3 +173,5 @@ a.anchor {
     padding-top: 70px;
     margin-top: -70px;
 }
+
+
