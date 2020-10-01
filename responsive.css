@@ -109,4 +109,11 @@
 		padding: auto;
 		margin: auto;
 	}
+	.top-image{
+		display:block;
+		width:100vw;
+	}
+	.top-image-res{
+	display:none;
+}
 }
